@@ -54,6 +54,15 @@
                 @enderror
             </div>
     
+            <div>
+                <input id="address" type="text" class="form-control mb-4 @error('address') is-invalid @enderror" name="address" value="{{ old('address') }}" required autocomplete="address" autofocus placeholder="Address">
+    
+                @error('address')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
+            </div>
     
             <div>
                 <input id="password" type="password" class="form-control mb-4 @error('password') is-invalid @enderror" name="password" required autocomplete="new-password" placeholder="Password">
@@ -70,13 +79,12 @@
             </div>
 
             <hr>
-            <button class="btn btn-info my-4 btn-block" type="submit">Sign up</button>
+            <button class="btn btn-info my-4 btn-block" type="submit"> {{ __('Register') }}</button>
     
             <div class="text-center">
                 <p>By clicking
                     <em>Sign up</em> you agree to our
-                    <a href="" target="_blank">terms of service</a> and
-                    <a href="" target="_blank">terms of service</a>.
+                    <a href="" target="_blank">terms of service</a>
                 </p>
             </div>
         </div>
