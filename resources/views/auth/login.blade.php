@@ -1,10 +1,12 @@
-@extends('layouts.app')
+@extends('layouts.auth')
 
 @section('content')
 <div class="container">
+    <h2 class="navbar pb-0 text-muted">{{__("Login")}}</h2>
+<hr>
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
+            <div class="card shadow ">
                 <div class="card-header">{{ __('Login') }}</div>
 
                 <div class="card-body">

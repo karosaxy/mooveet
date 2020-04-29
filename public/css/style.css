@@ -58,6 +58,10 @@ body {
     background: #424f95 !important;
 }
 
+.bg-blue {
+    background: #424f95 !important;
+}
+
 .navbar.navbar-light form .md-form input {
     border-bottom: 1px solid #b1acac !important;
 }

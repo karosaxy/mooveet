@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.auth')
 
 @section('content')
 <div class="container">
@@ -7,7 +7,7 @@
 <div class="row">
     <div class="form-group m-auto  col-md-8">
 
-        <form class="border mt-5 border-light shadow p-5" method="POST" action="{{ route('register') }}">
+        <form class="border mt-5 border-light shadow p-5" method="post" action="{{ route('register') }}">
             @csrf
     
             <div class="card-header text-center mb-0 border">{{ __('Sign-Up') }}</div>
@@ -57,7 +57,7 @@
             <div>
                 <input id="address" type="text" class="form-control mb-4 @error('address') is-invalid @enderror" name="address" value="{{ old('address') }}" required autocomplete="address" autofocus placeholder="Address">
     
-                @error('address')
+                @error('address ')
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $message }}</strong>
                     </span>
@@ -79,7 +79,7 @@
             </div>
 
             <hr>
-            <button class="btn btn-info my-4 btn-block" type="submit"> {{ __('Register') }}</button>
+            <button class="btn btn-info my-4 btn-block" type="submit" name="register"> {{ __('Register') }}</button>
     
             <div class="text-center">
                 <p>By clicking
