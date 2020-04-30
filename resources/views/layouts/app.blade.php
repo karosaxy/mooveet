@@ -165,6 +165,7 @@
     <script src="{{ url('css/js/popper.min.js') }}"></script>
     <!-- Bootstrap core JavaScript -->
     <script src="{{ url('css/js/bootstrap.min.js') }}"></script>
+    <script src="{{ url('js/app.js') }}"></script>
     <script>
         $(window).scroll(function() {
             $('nav').toggleClass('scrolled', $(this).scrollTop() > 200);
