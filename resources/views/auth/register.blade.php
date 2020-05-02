@@ -1,4 +1,4 @@
-@extends('layouts.auth')
+@extends('layouts.app2')
 
 @section('content')
 <div class="container">
@@ -15,24 +15,15 @@
     
     
             <div>
-                <input id="firstname" type="text" class="form-control mb-4 @error('firstname') is-invalid @enderror" name="firstname" value="{{ old('firstname') }}" required autocomplete="firstname" autofocus placeholder="Firstname">
+                <input id="name" type="text" class="form-control mb-4 @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus placeholder="name">
     
-                @error('firstname')
+                @error('name')
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $message }}</strong>
                     </span>
                 @enderror
             </div>
     
-            <div>
-                <input id="lastname" type="text" class="form-control mb-4 @error('lastname') is-invalid @enderror" name="lastname" value="{{ old('lastname') }}" required autocomplete="lastname" autofocus placeholder="Lastname">
-    
-                @error('lastname')
-                    <span class="invalid-feedback" role="alert">
-                        <strong>{{ $message }}</strong>
-                    </span>
-                @enderror
-            </div>
     
             <div>
                 <input id="email" type="email" class="form-control mb-4 @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" placeholder="Email Address">
