@@ -3,18 +3,62 @@
 @section('content')
 <div class="container pt-3">
     <div class="row justify-content-center">
+       
+
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Dashboard</div>
+            <div class="card-header">Welcome {{ Auth::user()->name }}</div>
 
                 <div class="card-body">
+{{-- 
+                    <div class="avatar w-25 m-4">
+                        
+        
+                
+                    </div> --}}
+
+                    {{-- upload profile-image for users(drivers) --}}
+
+                <img alt="User Pic" src="{{ asset('/storage/images/'.Auth::User()->avatar) }}" class="rounded-circle">
+
+                    <form action="/upload" method="post" enctype="multipart/form-data">
+                  
+                        
+                        <input type="file" name="image" id="">
+                        @csrf
+                        <input type="submit" name="upload" value="Upload" id="">
+                    
+                    </form>
+
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
                         </div>
                     @endif
 
-                    You are logged in!
+                    <table class="table mb-4">
+                        <thead class="thead-dark">
+                          <tr>
+                            <h3>Profile Details</h3>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Name:</th>
+                              <td>
+                                  {{ Auth::user()->name}}                        
+                                </td>
+                                <th scope="row">Email:</th>
+                                <td>
+                                    {{ Auth::user()->email}}                      
+                                  </td>
+                                  <th scope="row">Phone:</th>
+                                  <td>
+                                      {{ Auth::user()->phone}}                        
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
                 </div>
             </div>
         </div>

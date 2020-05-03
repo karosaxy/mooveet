@@ -1,7 +1,9 @@
 <?php
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use PhpParser\Node\Expr\FuncCall;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,12 +19,14 @@ use Illuminate\Support\Facades\Auth;
 Route::get('/', function () {
     return view('index');
 });
+Route::post('/upload', 'Admin\UserController@uploadAvatar');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
 
+Route::resource('/user/trucks', 'TruckController');
 
 Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function()
 {

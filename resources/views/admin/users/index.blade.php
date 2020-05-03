@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-sm-10 col-auto">
             <div class="card text-muted">
                 <div class="card-header text-center"><strong>Users</strong></div>
                     <table class="table">
@@ -25,8 +25,8 @@
                         <td>{{ $user->email }}</td>
                         <td>{{ $user->phone }}</td>
                         <td>
-                        <a class="text-reset" href="{{ route('admin.users.edit', $user->id) }}"><button type="button" class="btn btn-info">Edit</button></a>
-                            <a class="text-reset" href="{{ route('admin.users.destroy', $user->id) }}"><button type="button" class="btn btn-danger">Delete</button></a>
+                        <a class="text-reset" href="{{ route('admin.users.edit', $user->id) }}"><button type="button" class="btn btn-info float-left">Edit</button></a>
+                            <a class="text-reset" href="{{ route('admin.users.destroy', $user->id) }}"><button type="button" class="btn btn-danger float-left">Delete</button></a>
                         </td>
                       </tr>
                     @endforeach
