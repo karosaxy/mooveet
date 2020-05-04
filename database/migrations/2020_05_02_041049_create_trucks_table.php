@@ -17,7 +17,7 @@ class CreateTrucksTable extends Migration
             $table->id();
             $table->string('truck_name');
             $table->string('truck_size');
-            $table->integer('user_id')->unsigned();
+            $table->unsignedBigInteger('user_id');
             $table->string('truck_location');
             $table->string('truck_type');
             $table->timestamps();

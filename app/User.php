@@ -41,4 +41,9 @@ class User extends Authenticatable
     {
         return $this->admin;
     }
+
+    public function trucks()
+    {
+        return $this->hasMany(Truck::class);
+    }
 }

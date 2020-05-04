@@ -25,8 +25,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::resource('/truck', 'Truckcontroller');
 
-Route::resource('/user/trucks', 'TruckController');
 
 Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function()
 {

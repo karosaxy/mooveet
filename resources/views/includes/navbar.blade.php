@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-dark navbar-collapse">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-dark navbar-collapse col-md-10">
     <a class="navbar-brand text-white" href="{{ url('/') }}">
         <strong>{{ config('app.name', 'Mooveet') }}</strong></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">

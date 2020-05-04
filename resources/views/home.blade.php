@@ -7,19 +7,19 @@
 
         <div class="col-md-8">
             <div class="card">
-            <div class="card-header">Welcome {{ Auth::user()->name }}</div>
+            <div class="card-header">
+                Welcome {{ Auth::user()->name }}
+                <a href="">
+                    <input style="background-color:green; color:white; border:none; margin:2px; float:right;" type="button" value="Edit Profile">
+                </a>
+            <a href="{{ route('truck.create') }}">
+                    <input style="background-color:gray; color:white; border:none; margin:2px; float:right;" class="input-btn" type="button" value="Register A Truck">
+                </a>
+            
+            </div>
 
                 <div class="card-body">
-{{-- 
-                    <div class="avatar w-25 m-4">
-                        
-        
-                
-                    </div> --}}
-
-                    {{-- upload profile-image for users(drivers) --}}
-
-                <img alt="User Pic" src="{{ asset('/storage/images/'.Auth::User()->avatar) }}" class="rounded-circle">
+                     <img alt="User Pic" src="{{ asset('/storage/images/'.Auth::User()->avatar) }}" class="rounded-circle">
 
                     <form action="/upload" method="post" enctype="multipart/form-data">
                   
@@ -64,4 +64,6 @@
         </div>
     </div>
 </div>
+
+@include('includes.trucks')
 @endsection
