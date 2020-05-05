@@ -7,7 +7,7 @@
     <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link pr-3" href="#">About Us</a>
+                <a class="nav-link pr-3" href="/about">About Us</a>
             </li>
             <li class="nav-item mr-3">
                 <a class="nav-link border-left border-white pl-3" href="#">Contact Us</a>
