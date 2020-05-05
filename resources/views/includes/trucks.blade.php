@@ -6,7 +6,7 @@
         <table class="table">
             <thead class="thead-dark">
               <tr>
-                <th scope="col">#</th>
+                
                 <th scope="col">Truck Name</th>
                 <th scope="col">Truck Type</th>
                 <th scope="col">Truck Size</th>
@@ -14,14 +14,16 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Benz</td>
-                <td>Semi-Trailer</td>
-                <td>20-25 Tonnes</td>
-                <td>Gbagada</td>
-              </tr>
-              
+            @foreach (Auth::user()->trucks as $truck)
+            <tr>
+              <td>{{ $truck->truck_name }}</td>
+              <td>{{ $truck->truck_type }}</td>
+              <td>{{ $truck->truck_size }}</td>
+              <td>{{ $truck->truck_location }}</td>
+            </tr>
+
+
+            @endforeach
           </table>
           
     </div>

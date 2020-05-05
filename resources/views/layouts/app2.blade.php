@@ -79,16 +79,17 @@
                             </a>
 
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a href="{{ route('admin.users.index') }}" class="dropdown-item">
+                            
+                                    {{ __('User Management') }}
+                                </a> 
                                 <a class="dropdown-item" id="navbarDropdown" href="{{ route('logout') }}"
                                    onclick="event.preventDefault();
                                                  document.getElementById('logout-form').submit();">
                                     {{ __('Logout') }}
                                 </a>
                                
-                                <a href="{{ route('admin.users.index') }}" class="dropdown-item">
-                            
-                                    {{ __('User Management') }}
-                                </a>
+                              
                               
                            
 
@@ -115,7 +116,7 @@
                 <!-- Grid column -->
                 <div class="col-md-2 mb-3">
                     <h6 class="text-uppercase text-white font-weight-bold">
-                        <a class="text-reset text-decoration-none" href="#!">About us</a>
+                        <a class="text-reset text-decoration-none" href="/about">About us</a>
                     </h6>
                 </div>
                 <!-- Grid column -->

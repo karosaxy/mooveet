@@ -1,14 +1,17 @@
+@extends('layouts.app2')
 
+@section('content')
+    
   
 <div class="container">
-    <div class="col-md-8">
-    <a href="{{ route('home') }}">
+    <div class=" card col-md-10">
+        <a href="{{ route('home') }}">
             <input type="button" value="back">
         </a>
         <h2 class="navbar pb-0 text-muted">{{__("Truck Registration")}}</h2>
         <hr>
-        <div class="row">
-            <form action="/truck" method="post">
+        <form class="form-group" action="{{ route('trucks.store') }}" method="post">
+        
                 @csrf
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Truck Name</label>
@@ -20,6 +23,7 @@
                             </span>
                         @enderror
                     </div>
+                
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Truck Location</label>
                         <input type="text" class="form-control @error('truck_location') is-invalid @enderror" name="truck_location" value="{{ old('truck_location') }}" id="exampleFormControlInput1" placeholder="Location">
@@ -67,7 +71,8 @@
                     <hr>
                     <button class="btn btn-info my-4 btn-block" type="submit" name="register"> {{ __('Register') }}</button>
             
+             
             </form>
-        </div>
     </div>
  </div>
+@endsection

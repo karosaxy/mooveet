@@ -9,11 +9,11 @@
             <div class="card">
             <div class="card-header">
                 Welcome {{ Auth::user()->name }}
-                <a href="">
-                    <input style="background-color:green; color:white; border:none; margin:2px; float:right;" type="button" value="Edit Profile">
+                <a href="" class="text-reset">
+                    <input class="btn btn-success text-white" style="float:right;" type="button" value="Edit Profile">
                 </a>
-            <a href="{{ route('truck.create') }}">
-                    <input style="background-color:gray; color:white; border:none; margin:2px; float:right;" class="input-btn" type="button" value="Register A Truck">
+                <a href="{{ route('trucks.create') }}" class="text-reset">
+                    <input class="btn btn-secondary text-white" style="float:right;" class="input-btn" type="button" value="Register A Truck">
                 </a>
             
             </div>

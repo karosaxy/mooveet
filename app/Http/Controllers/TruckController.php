@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Truck;
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class TruckController extends Controller
 {
@@ -15,8 +17,10 @@ class TruckController extends Controller
      */
     public function index()
     {
-        //
+        $trucks =Truck::all()->toArray();
+        return view('home');
     }
+
 
     /**
      * Show the form for creating a new resource.
@@ -34,12 +38,21 @@ class TruckController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, User $user)
+    public function store(Request $request)
     {
-       
-        Truck::create([$request, $user]);
+        // dd(Auth::user()->id);
+        Truck::create([
+            'user_id'=> Auth::user()->id,
+            'truck_name'=> $request->truck_name,
+            'truck_location'=> $request->truck_location,
+            'truck_size'=> $request->truck_size,
+            'truck_type'=> $request->truck_type,
+        ]);
+
         
-      
+        return view('home');
+        
+
     }
 
     /**
@@ -50,7 +63,7 @@ class TruckController extends Controller
      */
     public function show($id)
     {
-        //
+       
     }
 
     /**

@@ -11,12 +11,10 @@ class Truck extends Model
      *
      * @var array
      */
-    protected $fillable = [
-        'truck_name', 'truck_size', 'truck_location', 'truck_type', 'user_id',
-    ];
+    protected $guarded =[];
 
     public function user()
     {
-        return $this->belongsToMany(User::class);
+        return $this->belongsTo(User::class);
     }
 }
