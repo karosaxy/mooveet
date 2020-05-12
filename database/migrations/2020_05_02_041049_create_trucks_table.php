@@ -21,6 +21,14 @@ class CreateTrucksTable extends Migration
             $table->string('truck_location');
             $table->string('truck_type');
             $table->timestamps();
+
+        //    $table->unique(['truck_id','user_id']);
+
+
+            $table->foreign('user_id')
+                ->references('id')
+                ->on('users')
+                ->onDelete('cascade');
         });
     }
 

@@ -27,8 +27,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('trucks', 'Truckcontroller');
 
+Route::resource('scan', 'OrderTruckController');
 
 Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function()
 {
     Route::resource('/users', 'UserController', ['except' => ['show', 'create', 'store']]);
 });
+

@@ -12,7 +12,7 @@
                     <h6 class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem repellendus quasi fuga nesciunt dolorum nulla magnam veniam sapiente, fugiat! Commodi sequi non animi ea dolor molestiae iste.
                     </h6>
                     <a class="btn btn-light" type="button" href="{{ route('register') }}">{{ __('Register') }}</a>
-                    <a class="btn btn-outline-light btn-scan" type="button" href="{{ route('home') }}">{{ __('Scan For A Driver') }}</a>
+                    <a class="btn btn-outline-light btn-scan" type="button" href="{{ route('scan.create') }}">{{ __('Scan For A Driver') }}</a>
                     <a class="btn btn-light" type="button" href="{{ route('login') }}">{{ __('Login') }}</a>
                 </div>
                 <!--Grid column-->
