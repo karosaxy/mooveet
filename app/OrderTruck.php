@@ -10,7 +10,9 @@ class OrderTruck extends Model
 
     protected $guarded =[];
     
-
+    // protected $casts = [
+    //     'truck_id' =>'array'
+    // ];
         
     //eloquent relationship between Truck and their Orders....
 

@@ -15,7 +15,7 @@ class CreateOrderTrucksTable extends Migration
     {
         Schema::create('order_trucks', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('truck_id');
+            //$table->unsignedBigInteger('truck_id');
             $table->string('name');
             $table->string('phone');
             $table->string('pickup_location');
@@ -26,10 +26,10 @@ class CreateOrderTrucksTable extends Migration
 
             // $table->unique(['order_trucks_id','truck_id']);
 
-            $table ->foreign('truck_id')
-                    ->references('id')
-                    ->on('trucks')
-                    ->onDelete('cascade');
+            // $table ->foreign('truck_id')
+            //         ->references('id')
+            //         ->on('trucks')
+            //         ->onDelete('cascade');
         });
     }
 

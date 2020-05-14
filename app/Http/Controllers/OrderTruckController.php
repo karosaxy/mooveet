@@ -28,9 +28,17 @@ class OrderTruckController extends Controller
      */
     public function create()
     {
-        //
 
         return view('scan.create');
+    }
+
+    public function scan(Request $request)
+    {
+        //dd($request);
+        $trucks = Truck::where('truck_location', $request->pickup_location)->where('truck_size', $request->truck_size)->get();
+           //dd($truck);
+      
+        return view('scan.show')->withTrucks($trucks);
     }
 
     /**
@@ -39,7 +47,7 @@ class OrderTruckController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, OrderTruck $orderTruck)
     {
         
 
@@ -51,18 +59,35 @@ class OrderTruckController extends Controller
             'truck_size'=>['required'],
             'goods_type'=>['required'],
         ]);
+        // $trucks = [];
+        // $data = Truck::where('truck_location', $request->pickup_location)->get();
+        
+        // foreach($data as $truck){
+        //     array_push($trucks, $truck->id);
+        // }
 
-        OrderTruck::create([
-            'truck_id'=>Truck::where('id', 'pickup_location'),
+       
+
+      $saveOrderTruck =  OrderTruck::create([
+         
             'name'=> $request->name,
             'phone'=> $request->phone,
             'pickup_location'=> $request->pickup_location,
             'destination'=> $request->destination,
             'truck_size'=> $request->truck_size,
             'goods_type'=> $request->goods_type,
-        ]);
 
-        return view('scan.show');
+            
+        ]);
+        //dd($saveOrderTruck);
+
+        if($saveOrderTruck){
+           // dd("Saved");
+            return view('scan.show');
+        }else{
+            return 'Scan was unsuccessful, Try Again';
+        }
+      
     }
 
     /**
@@ -71,9 +96,10 @@ class OrderTruckController extends Controller
      * @param  \App\OrderTruck  $orderTruck
      * @return \Illuminate\Http\Response
      */
-    public function show(OrderTruck $orderTruck)
+    public function show(Request $request)
     {
-        //
+        $truck = Truck::where('truck_location', $request->pick_location)->where('truck_size', $request->truck_size)->get();
+           dd($truck);
     }
 
     /**

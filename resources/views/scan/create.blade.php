@@ -4,7 +4,7 @@
         <h2 class="navbar pb-0 text-muted">{{__("Scan For A Truck")}}</h2>
         <hr>
         <div class="card">
-            <form class="border mt-5 border-light shadow p-5" action="{{ route('scan.store') }}" method="post">
+            <form class="border mt-5 border-light shadow p-5" action="{{ route('scan.search') }}" method="post">
                 @csrf
             
                 <div class="row">

@@ -28,6 +28,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('trucks', 'Truckcontroller');
 
 Route::resource('scan', 'OrderTruckController');
+Route::post('scan/search', 'OrderTruckController@scan')->name('scan.search');
 
 Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function()
 {
