@@ -19,6 +19,10 @@ use PhpParser\Node\Expr\FuncCall;
 Route::get('/', function () {
     return view('index');
 });
+Route::get('/about', function(){
+    return view('about');
+});
+
 Route::post('/upload', 'Admin\UserController@uploadAvatar');
 
 Auth::routes();
