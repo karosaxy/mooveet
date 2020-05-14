@@ -10,7 +10,7 @@
                 <a class="nav-link pr-3" href="/about">About Us</a>
             </li>
             <li class="nav-item mr-3">
-                <a class="nav-link border-left border-white pl-3" href="#">Contact Us</a>
+                <a class="nav-link border-left border-white pl-3" href="/contact">Contact Us</a>
             </li>
             <li class="nav-item border-left border-white pl-3">
                 <a class="nav-link" href="#">Services</a>
