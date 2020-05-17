@@ -9,7 +9,9 @@
                 <div class="col-md-6 col-sm-12 text-white text-center text-md-left mt-xl-5 mb-5 wow fadeInLeft" data-wow-delay="0.3s">
                     <h1 class="h1-responsive font-weight-bold mt-sm-5">Make your World go round</h1>
                     <hr class="hr-light">
-                    <h6 class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem repellendus quasi fuga nesciunt dolorum nulla magnam veniam sapiente, fugiat! Commodi sequi non animi ea dolor molestiae iste.
+                    <h6 class="mb-4">We are Technology based solution  platform that connects a Cargo owner with a truck owner with the help of  the Mooveet web app!
+
+                        We know how hard it is to get a good truck and move large properties to your desired location. Are you worried and don't know a reliable truck-man to handle your properties with care? Don't worry, you dont have to miss that deadline anymore we have got you covered! We will just Mooveet! 
                     </h6>
                     <a class="btn btn-light" type="button" href="{{ route('register') }}">{{ __('Register') }}</a>
                     <a class="btn btn-outline-light btn-scan" type="button" href="{{ route('scan.create') }}">{{ __('Scan For A Driver') }}</a>

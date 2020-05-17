@@ -9,14 +9,14 @@
             
                 <div class="row">
                     <div class="col">
-                    <input type="text" class="form-control form-control mb-4 @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" placeholder="name">
+                    <input type="text" class="form-control form-control mb-4 @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" placeholder="name" required>
             
                     @error('name')
                         <p class="invalid-feedback">{{ $message }}</p>
                     @enderror
                     </div>
                     <div class="col">
-                    <input type="text" class="form-control form-control mb-4 @error('phone') is-invalid @enderror" name="phone" value="{{ old('phone') }}" placeholder="phone">
+                    <input type="text" class="form-control form-control mb-4 @error('phone') is-invalid @enderror" name="phone" value="{{ old('phone') }}" placeholder="phone" required>
                     
                     @error('phone')
                         <p class="invalid-feedback">{{ $message }}</p>
@@ -27,7 +27,7 @@
             
                 <div class="row">
                     <div class="col">
-                    <input type="text" class="form-control form-control mb-4 @error('pickup_location') is-invalid @enderror" name="pickup_location" value="{{ old('pickup_location') }}" placeholder="PickUp">
+                    <input type="text" class="form-control form-control mb-4 @error('pickup_location') is-invalid @enderror" name="pickup_location" value="{{ old('pickup_location') }}" placeholder="PickUp" required>
                     
                     @error('pickup_location')
                         <p class="invalid-feedback">{{ $message }}</p>
@@ -35,7 +35,7 @@
                     </div>
                     <div class="col">
                     <input type="text" class="form-control @error('destination') is-invalid @enderror" name=
-                    "destination" value="{{ old('destination') }}" placeholder="Destination">
+                    "destination" value="{{ old('destination') }}" placeholder="Destination" required>
                     
                     @error("destination")
                         <p class="invalid-feedback">{{ $message }}</p>

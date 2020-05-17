@@ -2,15 +2,14 @@
 
 
 @section('content')
-  <div class="container">
+<div id="app" class="container" >
     <!--Grid row-->
     <div class="row py-5">
         <!--Grid column-->
         <div class="col-md-12 text-justify">
             <h2>Our Services</h2>
             <hr>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur
+            <p>Allow cargo owners to order for trucks anytime and easily track them once their cargo is in transit. And if you own a good truck please click the Registration Button and come join our wonderful family. Let's Mooveet!! Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
                 velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
@@ -39,7 +38,7 @@
                 <!--Title-->
                 <h4 class="card-title">WareHouse</h4>
                 <!--Text-->
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                <p class="card-text">We provide safe and Reliable warehouse Services. kindly reachout to us and make use of wide varieties warehouse services and ensure your cargo is safe.
                 </p>
                 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
                 <button type="button" class="btn btn-light-blue">Read more</button>
@@ -66,7 +65,7 @@
                 <!--Title-->
                 <h4 class="card-title">Tracking</h4>
                 <!--Text-->
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                <p class="card-text">You dont have to loose sleep over your cargo, our Reliable Trucker understands how Important your cargo is, so feel free to make use of our tracker.
                 </p>
                 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
                 <button type="button" class="btn btn-light-blud">Read more</button>
@@ -93,7 +92,7 @@
                 <!--Title-->
                 <h4 class="card-title">Find A Truck</h4>
                 <!--Text-->
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                <p class="card-text">Getting a good and trusted Trucker to deliver your cargo is just a click away!.
                 </p>
                 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
                 <button type="button" class="btn btn-light-blud">Read more</button>

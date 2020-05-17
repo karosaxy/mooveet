@@ -34,11 +34,21 @@ class OrderTruckController extends Controller
 
     public function scan(Request $request)
     {
-        //dd($request);
+        //$message =  'There are no Trucks Available at your current Location, Try again Later';
+        
         $trucks = Truck::where('truck_location', $request->pickup_location)->where('truck_size', $request->truck_size)->get();
-           //dd($truck);
+     
+        //dd($trucks);
+
+          if (count($trucks)===0){
+              session()->flash('message', 'There are no Trucks Available at your current Location, Try again Later');
+          }
+        //   return view('scan.show')->$message;
+
+        //     else
+           return view('scan.show')->withTrucks($trucks);
       
-        return view('scan.show')->withTrucks($trucks);
+
     }
 
     /**

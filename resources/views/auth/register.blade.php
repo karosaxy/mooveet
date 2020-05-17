@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    <h2 class="navbar pb-0 text-muted">{{__("Driver's Registration")}}</h2>
+    <h2 class="navbar p-3 text-muted">{{__("Driver's Registration")}}</h2>
     <hr>
     <div class="row">
         <div class="form-group m-auto  col-md-8">

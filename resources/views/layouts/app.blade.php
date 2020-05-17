@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="{{ asset('./css/css/fontawesome.min.css')}}">
     <link rel="stylesheet" href="{{ asset('./css/css/all.min.css')}}">
 
+
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
@@ -23,8 +24,10 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
     <link rel="stylesheet" href="{{ asset('./css/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{ asset('./css/style.css')}}">
+    
 </head>
 
 <body>
@@ -159,12 +162,12 @@
 
     <!-- script -->
 
-    <!-- JQuery -->
+    {{-- <!-- JQuery -->
     <script src="{{ url('css/js/jquery-3.5.0.min.js') }}"></script>
     <!-- popper -->
     <script src="{{ url('css/js/popper.min.js') }}"></script>
     <!-- Bootstrap core JavaScript -->
-    <script src="{{ url('css/js/bootstrap.min.js') }}"></script>
+    <script src="{{ url('css/js/bootstrap.min.js') }}"></script> --}}
     <script src="{{ url('js/app.js') }}"></script>
     <script>
         $(window).scroll(function() {

@@ -19,13 +19,16 @@
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+   
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    {{-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> --}}
-    <link rel="stylesheet" href="{{ asset('./css/css/bootstrap.min.css')}}">
+    
+   
+    {{-- <link rel="stylesheet" href="{{ asset('./css/css/bootstrap.min.css')}}"> --}}
     <link rel="stylesheet" href="{{ asset('./css/style.css')}}">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    
 </head>
 
 <body>
@@ -109,14 +112,17 @@
 
     <!--Start of Footer -->
     <footer class="mt-5 page-footer font-small indigo">
- 
+
+        <!-- Footer Links -->
+        <div class="container">
+    
             <!-- Grid row-->
             <div class="row text-center text-white d-flex justify-content-center pt-5 mb-3">
     
                 <!-- Grid column -->
                 <div class="col-md-2 mb-3">
                     <h6 class="text-uppercase text-white font-weight-bold">
-                        <a class="text-reset text-decoration-none" href="/about">About us</a>
+                        <a href="/about">About us</a>
                     </h6>
                 </div>
                 <!-- Grid column -->
@@ -124,7 +130,7 @@
                 <!-- Grid column -->
                 <div class="col-md-2 mb-3">
                     <h6 class="text-uppercase text-white font-weight-bold">
-                        <a class="text-reset text-decoration-none" href="#!">Services</a>
+                        <a href="#!">Services</a>
                     </h6>
                 </div>
                 <!-- Grid column -->
@@ -132,7 +138,7 @@
                 <!-- Grid column -->
                 <div class="col-md-2 mb-3">
                     <h6 class="text-uppercase text-white font-weight-bold">
-                        <a class="text-reset text-decoration-none" href="#!">Awards</a>
+                        <a href="#!">Awards</a>
                     </h6>
                 </div>
                 <!-- Grid column -->
@@ -140,7 +146,7 @@
                 <!-- Grid column -->
                 <div class="col-md-2 mb-3">
                     <h6 class="text-uppercase text-white font-weight-bold">
-                        <a class="text-reset text-decoration-none" href="#!">Contact</a>
+                        <a href="/contact">Contact</a>
                     </h6>
                 </div>
                 <!-- Grid column -->
@@ -203,29 +209,27 @@
     
             </div>
             <!-- Grid row-->
-            <!-- Copyright -->
+    
+        </div>
+        <!-- Footer Links -->
+    
+        <!-- Copyright -->
         <div class="footer-copyright text-center py-3">© 2020 Copyright:
-            <a class="text-reset text-decoration-none" href="{{ url('/') }}"> mooveet.test</a>
+            <a href="mooveet.test/"> mooveet.test</a>
         </div>
         <!-- Copyright -->
     
     </footer>
-<!--End of Footer -->
+    <!--End of Footer -->
 
     <!-- script -->
-
-    {{-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="{{ url('js/app.js') }}"></script> --}}
-
     <!-- JQuery -->
-    <script src="{{ url('css/js/jquery-3.5.0.min.js') }}"></script>
+    {{-- <script src="{{ url('css/js/jquery-3.5.0.min.js') }}"></script>
     <!-- popper -->
     <script src="{{ url('css/js/popper.min.js') }}"></script>
     <!-- Bootstrap core JavaScript -->
-    <script src="{{ url('css/js/bootstrap.min.js') }}"></script>
-    <script src="{{ url('js/app.js') }}"></script>
+    <script src="{{ url('css/js/bootstrap.min.js') }}"></script> --}}
+   
 </body>
 
 </html>

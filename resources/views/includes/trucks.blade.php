@@ -1,9 +1,9 @@
-<div class="card col-md-8 m-auto">
+<div class="card col-md-8 m-auto p-0">
     <div class="card-header">
         <h3>Truck Details</h3>
     </div>
-    <div class="card-body">
-        <table class="table">
+    <div class="card-body p-0">
+        <table class="table text-center">
             <thead class="thead-dark">
               <tr>
                 
@@ -14,16 +14,15 @@
               </tr>
             </thead>
             <tbody>
-            @foreach (Auth::user()->trucks as $truck)
-            <tr>
+              @foreach (Auth::user()->trucks as $truck)
+              <tr>
               <td>{{ $truck->truck_name }}</td>
               <td>{{ $truck->truck_type }}</td>
               <td>{{ $truck->truck_size }}</td>
               <td>{{ $truck->truck_location }}</td>
-            </tr>
-
-
-            @endforeach
+              </tr>
+              @endforeach
+            </tbody>
           </table>
           
     </div>
