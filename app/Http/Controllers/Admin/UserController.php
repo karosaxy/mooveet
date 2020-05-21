@@ -23,7 +23,7 @@ class UserController extends Controller
     if ($request->hasFile('image')){
        $filename = $request->image->getClientOriginalName();
 
-        //check if user has an old avatr stored and delete/replace it....
+        //check if user has an old avatar stored and delete/replace it....
         if (auth()->user()->avatar){
 
             Storage::delete('/public/images/'.auth()->user()->avatar);
@@ -34,7 +34,7 @@ class UserController extends Controller
     }
 
  
-    return redirect()->back() ;
+    return redirect()->back()->with('message', 'Profile Picture Uploaded successfully') ;
    }
 
 

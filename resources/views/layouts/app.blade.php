@@ -60,7 +60,7 @@
             <!-- Grid column -->
             <div class="col-md-2 mb-3">
                 <h6 class="text-uppercase text-white font-weight-bold">
-                    <a href="/about">About us</a>
+                    <a href="/about" class="text-decoration-none text-reset">About us</a>
                 </h6>
             </div>
             <!-- Grid column -->
@@ -68,7 +68,7 @@
             <!-- Grid column -->
             <div class="col-md-2 mb-3">
                 <h6 class="text-uppercase text-white font-weight-bold">
-                    <a href="#!">Services</a>
+                    <a href="#!" class="text-decoration-none text-reset">Services</a>
                 </h6>
             </div>
             <!-- Grid column -->
@@ -76,7 +76,7 @@
             <!-- Grid column -->
             <div class="col-md-2 mb-3">
                 <h6 class="text-uppercase text-white font-weight-bold">
-                    <a href="#!">Awards</a>
+                    <a href="#!" class="text-decoration-none text-reset">Awards</a>
                 </h6>
             </div>
             <!-- Grid column -->
@@ -84,7 +84,7 @@
             <!-- Grid column -->
             <div class="col-md-2 mb-3">
                 <h6 class="text-uppercase text-white font-weight-bold">
-                    <a href="/contact">Contact</a>
+                    <a href="/contact" class="text-decoration-none text-reset">Contact</a>
                 </h6>
             </div>
             <!-- Grid column -->
@@ -153,7 +153,7 @@
 
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3">© 2020 Copyright:
-        <a href="mooveet.test/"> mooveet.test</a>
+        <a href="mooveet.test/" class="text-decoration-none text-reset"> mooveet.test</a>
     </div>
     <!-- Copyright -->
 

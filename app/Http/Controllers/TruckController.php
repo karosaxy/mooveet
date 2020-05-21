@@ -48,9 +48,10 @@ class TruckController extends Controller
             'truck_size'=> $request->truck_size,
             'truck_type'=> $request->truck_type,
         ]);
-
+        $request->session()->flash('status', 'Truck Registered successful!');
         
         return view('home');
+            
         
 
     }
@@ -95,8 +96,14 @@ class TruckController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(truck $truck)
     {
         //
+
+        $truck->delete();
+
+        return redirect('home')
+            ->with('message', 'Truck deleted Successfully');
+
     }
 }

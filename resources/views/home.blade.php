@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-       
+    
 
         <div class="col-md-10">
             <div class="card">
@@ -15,7 +15,11 @@
                 <a href="{{ route('trucks.create') }}" class="text-reset">
                     <input class="btn btn-secondary text-white" style="float:right;" class="input-btn" type="button" value="Register A Truck">
                 </a>
-            
+                @if (session('message'))
+                    <div class="alert alert-success mb-0" role="alert">
+                        {{ session('message') }}
+                     </div>
+                @endif
             </div>
 
                 <div class="card-body">
@@ -30,11 +34,7 @@
                     
                     </form>
 
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+
 
                     <table class="table mb-4 pt-4">
                         <thead class="thead-dark">

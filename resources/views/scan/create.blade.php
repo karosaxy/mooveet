@@ -1,4 +1,4 @@
-@extends('layouts.app2')
+@extends('layouts.app3')
 @section('content')
     <div class="container">
         <h2 class="navbar pb-0 text-muted">{{__("Scan For A Truck")}}</h2>

@@ -11,6 +11,7 @@
                 <th scope="col">Truck Type</th>
                 <th scope="col">Truck Size</th>
                 <th scope="col">Truck Location</th>
+                <th scope="col">Action</th>
               </tr>
             </thead>
             <tbody>
@@ -20,6 +21,13 @@
               <td>{{ $truck->truck_type }}</td>
               <td>{{ $truck->truck_size }}</td>
               <td>{{ $truck->truck_location }}</td>
+              <td>
+                <form action="{{ route('trucks.destroy', $truck->id) }}" method="post">
+                  @csrf
+                  @method('DELETE')
+                    <a href=""><button type="submit" class="btn btn-danger">Delete</button></a>
+                </form>
+              </td>
               </tr>
               @endforeach
             </tbody>

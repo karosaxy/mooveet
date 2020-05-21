@@ -111,7 +111,7 @@
 @yield('content')
 
     <!--Start of Footer -->
-    <footer class="mt-5  page-footer font-small indigo">
+    <footer class="mt-5  page-footer font-small indigo" style="position: absolute;">
 
         <!-- Footer Links -->
         <div class="container">
@@ -122,7 +122,7 @@
                 <!-- Grid column -->
                 <div class="col-md-2 mb-3">
                     <h6 class="text-uppercase text-white font-weight-bold">
-                        <a href="/about" class="text-decoration-none text-reset">About us</a>
+                        <a href="/about">About us</a>
                     </h6>
                 </div>
                 <!-- Grid column -->
@@ -130,7 +130,7 @@
                 <!-- Grid column -->
                 <div class="col-md-2 mb-3">
                     <h6 class="text-uppercase text-white font-weight-bold">
-                        <a href="#!" class="text-decoration-none text-reset">Services</a>
+                        <a href="#!">Services</a>
                     </h6>
                 </div>
                 <!-- Grid column -->
@@ -138,7 +138,7 @@
                 <!-- Grid column -->
                 <div class="col-md-2 mb-3">
                     <h6 class="text-uppercase text-white font-weight-bold">
-                        <a href="#!" class="text-decoration-none text-reset">Awards</a>
+                        <a href="#!">Awards</a>
                     </h6>
                 </div>
                 <!-- Grid column -->
@@ -146,7 +146,7 @@
                 <!-- Grid column -->
                 <div class="col-md-2 mb-3">
                     <h6 class="text-uppercase text-white font-weight-bold">
-                        <a href="/contact" class="text-decoration-none text-reset">Contact</a>
+                        <a href="/contact">Contact</a>
                     </h6>
                 </div>
                 <!-- Grid column -->
@@ -200,22 +200,12 @@
     
         <!-- Copyright -->
         <div class="footer-copyright text-center py-3">© 2020 Copyright:
-            <a href="mooveet.test/" class="text-decoration-none text-reset"> mooveet.test</a>
+            <a href="mooveet.test/"> mooveet.test</a>
         </div>
         <!-- Copyright -->
     
     </footer>
-    <!--End of Footer -->
 
- <script>
-        $("document").ready(function(){
-        setTimeout(function(){
-           $("div.alert").remove();
-        }, 5000 ); // 5 secs
-    
-    });
- </script>
-   
 </body>
 
 </html>

@@ -1,11 +1,11 @@
-@extends('layouts.app2')
+@extends('layouts.app3')
 
 @section('content')
-<div id="app" class="container p-auto card">
-    <h2 class=" p-3 text-muted">{{__("Login")}}</h2>
+<div class="container pb-3">
+    <h2 class="text-center p-3 text-muted">{{__("Welcome Back")}}</h2>
 <hr>
-    <div class="row justify-content-center">
-        <div class="col-md-8 p-3">
+    <div class="form-row justify-content-center">
+        <div class="col-md-6 p-3">
             <div class="card shadow ">
 
                 <div class="card-body">
@@ -41,7 +41,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <div class="col-md-6 offset-md-4">
+                            <div class="col-md-8 offset-md-4">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 

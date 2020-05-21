@@ -1,12 +1,16 @@
-@extends('layouts.app2')
+@extends('layouts.app3')
 
 @section('content')
     
-  
-<div class="container">
+@if (session('status'))
+<div class="alert alert-success" role="alert">
+    {{ session('status') }}
+</div>
+@endif
+<div class="container justify-content-center mt-4">
     <div class=" card col-md-10">
         <a href="{{ route('home') }}">
-            <input type="button" value="back">
+            <input class="m-3" type="button" value="back">
         </a>
         <h2 class="navbar pb-0 text-muted">{{__("Truck Registration")}}</h2>
         <hr>

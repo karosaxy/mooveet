@@ -25,23 +25,16 @@
         <div class="card mb-4 col-md-4 col-sm-12 shadow">
 
             <!--Card image-->
-            <div class="view overlay">
-                <img class="card-img-top" src="img/card1.jpg" alt="Card image cap">
-                <a href="#!">
-                    <div class="mask rgba-white-slight"></div>
-                </a>
-            </div>
-
+            <img class="card-img-top" src="img/card1.jpg" alt="Card image cap">
             <!--Card content-->
-            <div class="card-body">
+            <div class="card-body d-flex flex-column">
 
                 <!--Title-->
                 <h4 class="card-title">WareHouse</h4>
                 <!--Text-->
                 <p class="card-text">We provide safe and Reliable warehouse Services. kindly reachout to us and make use of wide varieties warehouse services and ensure your cargo is safe.
                 </p>
-                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                <button type="button" class="btn btn-light-blue">Read more</button>
+                <a href="" class="text-white btn btn-primary mt-auto">Read more</a>
 
             </div>
 
@@ -52,24 +45,15 @@
         <div class="card mb-4 col-md-4 col-sm-12 shadow">
 
             <!--Card image-->
-            <div class="view overlay">
-                <img class="card-img-top" src="img/card4.jpg" alt="Card image cap">
-                <a href="#!">
-                    <div class="mask rgba-white-slight"></div>
-                </a>
-            </div>
-
+            <img class="card-img-top" src="img/card4.jpg" alt="Card image cap">
             <!--Card content-->
-            <div class="card-body">
-
+            <div class="card-body d-flex flex-column">
                 <!--Title-->
                 <h4 class="card-title">Tracking</h4>
                 <!--Text-->
                 <p class="card-text">You dont have to loose sleep over your cargo, our Reliable Trucker understands how Important your cargo is, so feel free to make use of our tracker.
                 </p>
-                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                <button type="button" class="btn btn-light-blud">Read more</button>
-
+                <a href="" class="text-white btn btn-primary mt-auto">Read more</a>
             </div>
 
         </div>
@@ -79,24 +63,16 @@
         <div class="card mb-4 col-md-4 col-sm-12 shadow">
 
             <!--Card image-->
-            <div class="view overlay">
-                <img class="card-img-top" src="img/card3.jpg" alt="Card image cap">
-                <a href="#!">
-                    <div class="mask rgba-white-slight"></div>
-                </a>
-            </div>
+            <img class="card-img-top" src="img/card3.jpg" alt="Card image cap">
 
             <!--Card content-->
-            <div class="card-body">
-
+            <div class="card-body d-flex flex-column">
                 <!--Title-->
                 <h4 class="card-title">Find A Truck</h4>
                 <!--Text-->
                 <p class="card-text">Getting a good and trusted Trucker to deliver your cargo is just a click away!.
                 </p>
-                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                <button type="button" class="btn btn-light-blud">Read more</button>
-
+                <a href="" class="text-white btn btn-primary mt-auto">Read more</a>
             </div>
 
         </div>
