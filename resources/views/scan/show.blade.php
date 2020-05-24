@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app3')
 
 @section('content')
 
@@ -30,6 +30,9 @@
                     </p>
                     <p>
                         Email : {{ $truck->user->email }}
+                    </p>
+                    <p>
+                        Truck Type : {{ $truck->truck_type }}
                     </p>
                 </div>
             </div>

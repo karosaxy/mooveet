@@ -122,21 +122,3 @@ footer.page-footer {
 
 
 /*  Media queries */
-
-@media (min-width: 768px) {
-    .col-md-10 {
-        -ms-flex: 0 0 83.333333%;
-        flex: 0 0 83.333333%;
-        max-width: 100%;
-    }
-}
-
-@media (max-width: 740px) {
-    html,
-    body,
-    header,
-    .view {
-        height: 40px !important;
-        text-align: center !important;
-    }
-}

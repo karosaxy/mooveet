@@ -2,7 +2,7 @@
 
 
 @section('content')
-<div id="app" class="container" >
+<div class="container" >
     <!--Grid row-->
     <div class="row py-5">
         <!--Grid column-->

@@ -16,7 +16,7 @@
 
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/app.js') }}"></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -162,13 +162,7 @@
 
     <!-- script -->
 
-    {{-- <!-- JQuery -->
-    <script src="{{ url('css/js/jquery-3.5.0.min.js') }}"></script>
-    <!-- popper -->
-    <script src="{{ url('css/js/popper.min.js') }}"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script src="{{ url('css/js/bootstrap.min.js') }}"></script> --}}
-    <script src="{{ url('js/app.js') }}"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
     <script>
         $(window).scroll(function() {
             $('nav').toggleClass('scrolled', $(this).scrollTop() > 200);

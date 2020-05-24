@@ -1,4 +1,4 @@
-<div class="view" style="background-image: url('img/first.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+<div class="view" style="background-image: url('img/first.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
     <!-- Mask & flexbox options-->
     <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
         <!-- Content -->
