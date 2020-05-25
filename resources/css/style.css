@@ -10,6 +10,16 @@ body {
     min-height: 100vh;
 }
 
+.view {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @media (max-width: 740px) {
+        display: none;
+        text-align: center !important;
+    }
+}
+
 .view .mask {
     position: absolute;
     top: 0;
@@ -122,3 +132,13 @@ footer.page-footer {
 
 
 /*  Media queries */
+
+@media (max-width: 740px) {
+    html,
+    body,
+    header,
+    .view {
+        height: 100% !important;
+        text-align: center !important;
+    }
+}

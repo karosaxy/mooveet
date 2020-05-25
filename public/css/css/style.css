@@ -1,30 +1,5 @@
 /* Required for full background image */
 
-html,
-body,
-header,
-.view {
-    height: 100%;
-}
-
-@media (max-width: 740px) {
-    html,
-    body,
-    header,
-    .view {
-        height: 1000px;
-    }
-}
-
-@media (min-width: 800px) and (max-width: 850px) {
-    html,
-    body,
-    header,
-    .view {
-        height: 600px;
-    }
-}
-
 * {
     box-sizing: border-box;
 }
@@ -32,8 +7,17 @@ header,
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
-    overflow-x: hidden;
-    /* Hide horizontal scrollbar */
+    min-height: 100vh;
+}
+
+.view {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @media (max-width: 740px) {
+        display: none;
+        text-align: center !important;
+    }
 }
 
 .view .mask {
@@ -112,23 +96,6 @@ body {
     background-color: rgb(38, 38, 61) !important;
 }
 
-h6 {
-    line-height: 1.7;
-}
-
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-
-p {
-    margin-top: 0;
-    margin-bottom: 1rem;
-}
-
 .card {
     position: relative;
     display: -ms-flexbox;
@@ -159,25 +126,19 @@ p {
 footer.page-footer {
     bottom: 0;
     color: #fff;
+    margin-top: auto;
+    width: 100vw;
 }
 
 
 /*  Media queries */
-
-@media (min-width: 768px) {
-    .col-md-10 {
-        -ms-flex: 0 0 83.333333%;
-        flex: 0 0 83.333333%;
-        max-width: 100%;
-    }
-}
 
 @media (max-width: 740px) {
     html,
     body,
     header,
     .view {
-        height: 40px !important;
+        height: 100% !important;
         text-align: center !important;
     }
 }

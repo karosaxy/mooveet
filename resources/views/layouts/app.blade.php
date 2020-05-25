@@ -13,38 +13,30 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="{{ asset('./css/css/fontawesome.min.css')}}">
     <link rel="stylesheet" href="{{ asset('./css/css/all.min.css')}}">
-
-
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
-
+    
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-
-    <link rel="stylesheet" href="{{ asset('./css/css/bootstrap.min.css')}}">
+    {{-- <link rel="stylesheet" href="{{ asset('./css/css/bootstrap.min.css')}}"> --}}
     <link rel="stylesheet" href="{{ asset('./css/style.css')}}">
     
 </head>
 
 <body>
-
+    @include('includes.navbar')
     <header>
         <!--Navbar-->
-    @include('includes.navbar')
-
-        <!-- Main navigation -->
-
-        <!-- Full Page Intro -->
-    @include('includes.homepage')
-        <!-- Full Page Intro -->
+        
+        @include('includes.homepage')
     </header>
     
-    
+   
     <main>
+       
+        
         @yield('content')
     </main>
 
@@ -161,9 +153,10 @@
 <!--End of Footer -->
 
     <!-- script -->
-
     <script src="{{ asset('js/app.js') }}"></script>
     <script>
+
+   
         $(window).scroll(function() {
             $('nav').toggleClass('scrolled', $(this).scrollTop() > 200);
         });
