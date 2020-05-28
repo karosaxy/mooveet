@@ -15,18 +15,17 @@
     <link rel="stylesheet" href="{{ asset('./css/css/all.min.css')}}">
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-
+    <script src="{{ asset('js/app.js') }}"></script>
+    
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
    
 
     <!-- Styles -->
     
-   
-    {{-- <link rel="stylesheet" href="{{ asset('./css/css/bootstrap.min.css')}}"> --}}
-    <link rel="stylesheet" href="{{ asset('./css/style.css')}}">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('./css/style.css')}}">
+
 
     
 </head>
@@ -40,26 +39,26 @@
                 {{ config('app.name', 'Mooveet') }}
             </a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse justify-content-center navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo02">
                 <!-- Left Side Of Navbar -->
                 <ul class="navbar-nav ml-5">
                     <li class="nav-item">
-                        <a class="nav-link pr-3" href="#">About Us</a>
+                        <a class="nav-link p-2" href="/about">About Us</a>
                     </li>
-                    <li class="nav-item mr-3">
-                        <a class="nav-link border-left border-white pl-3" href="#">Contact Us</a>
+                    <li class="nav-item px-3">
+                        <a class="nav-link p-2" href="/contact">Contact Us</a>
                     </li>
-                    <li class="nav-item border-left border-white pl-3">
-                        <a class="nav-link" href="#">Services</a>
+                    <li class="nav-item px-3">
+                        <a class="nav-link p-2" href="/services">Services</a>
                     </li>
-                    <li class="nav-item border-left border-white pl-3">
-                        <a class="nav-link" href="#">Driver Scan</a>
+                    <li class="nav-item px-3">
+                        <a class="nav-link p-2" href="{{ route('scan.create') }}">Driver Scan</a>
                     </li>
-                    <li class="nav-item border-left border-white pl-3">
-                        <a class="nav-link" href="#">FAQ</a>
+                    <li class="nav-item px-3">
+                        <a class="nav-link p-2" href="/faq">FAQ</a>
                     </li>
                 </ul>
 
@@ -130,7 +129,7 @@
                 <!-- Grid column -->
                 <div class="col-md-2 mb-3">
                     <h6 class="text-uppercase text-white font-weight-bold">
-                        <a href="#!">Services</a>
+                        <a href="/services">Services</a>
                     </h6>
                 </div>
                 <!-- Grid column -->
@@ -138,7 +137,7 @@
                 <!-- Grid column -->
                 <div class="col-md-2 mb-3">
                     <h6 class="text-uppercase text-white font-weight-bold">
-                        <a href="#!">Awards</a>
+                        <a href="/award">Awards</a>
                     </h6>
                 </div>
                 <!-- Grid column -->
@@ -162,32 +161,34 @@
     
                     <div class="mb-2 flex-center">
     
-                        <!-- Facebook -->
-                        <a href="#" class="fb-ic">
-                            <i class="fab fa-facebook-f text-white mr-4"></i>
-                        </a>
-                        <!-- Twitter -->
-                        <a href="#" class="tw-ic">
-                            <i class="fab fa-twitter fa-lg text-white mr-4"> </i>
-                        </a>
-                        <!-- Google +-->
-                        <a href="#" class="gplus-ic">
-                            <i class="fab fa-google-plus-g fa-lg text-white mr-4"> </i>
-                        </a>
-                        <!--Linkedin -->
-                        <a href="#" class="li-ic">
-                            <i class="fab fa-linkedin-in fa-lg text-white mr-4"> </i>
-                        </a>
-                        <!--Instagram-->
-                        <a href="#" class="ins-ic">
-                            <i class="fab fa-instagram fa-lg text-white mr-4"> </i>
-                        </a>
-                        <!--Pinterest-->
-                        <a href="#" class="pin-ic">
-                            <i class="fab fa-pinterest fa-lg text-white"> </i>
-                        </a>
-    
-                    </div>
+                        <div class="mb-5 flex-center">
+
+                            <!-- Facebook -->
+                            <a href="https://github.com/karosaxy" class="fb-ic">
+                                <i class="fab fa-facebook-f text-white mr-4"></i>
+                            </a>
+                            <!-- Twitter -->
+                            <a href="https://twitter.com/AraromiRichard" class="tw-ic">
+                                <i class="fab fa-twitter fa-lg text-white mr-4"> </i>
+                            </a>
+                            <!-- Google +-->
+                            <a href="https://github.com/karosaxy" class="gplus-ic">
+                                <i class="fab fa-google-plus-g fa-lg text-white mr-4"> </i>
+                            </a>
+                            <!--Linkedin -->
+                            <a href="https://www.linkedin.com/in/richard-araromi-06685ab7/" class="li-ic">
+                                <i class="fab fa-linkedin-in fa-lg text-white mr-4"> </i>
+                            </a>
+                            <!--Instagram-->
+                            <a href="https://github.com/karosaxy" class="ins-ic">
+                                <i class="fab fa-instagram fa-lg text-white mr-4"> </i>
+                            </a>
+                            <!--Pinterest-->
+                            <a href="https://github.com/karosaxy" class="pin-ic">
+                                <i class="fab fa-pinterest fa-lg text-white"> </i>
+                            </a>
+        
+                        </div>
     
                 </div>
                 <!-- Grid column -->
@@ -205,6 +206,8 @@
         <!-- Copyright -->
     
     </footer>
+
+    <script src="{{ asset('js/app.js') }}"></script>
 
 </body>
 

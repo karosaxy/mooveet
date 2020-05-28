@@ -14,10 +14,6 @@
     <link rel="stylesheet" href="{{ asset('./css/css/fontawesome.min.css')}}">
     <link rel="stylesheet" href="{{ asset('./css/css/all.min.css')}}">
 
-
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
-
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
@@ -25,8 +21,8 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
-    <link rel="stylesheet" href="{{ asset('./css/css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{ asset('./css/style.css')}}">
+    
+    <link rel="stylesheet" href="{{ asset('css/style.css')}}">
     
 </head>
 
@@ -37,19 +33,21 @@
     @include('includes.navbar')
 
         <!-- Main navigation -->
+        @include('includes.homepage')
 
         <!-- Full Page Intro -->
-    @include('includes.homepage')
+    
         <!-- Full Page Intro -->
     </header>
     
     
     <main>
+       
         @yield('content')
     </main>
 
     <!--Start of Footer -->
-<footer class="mt-5 page-footer font-small indigo">
+    <footer class="mt-5 page-footer font-small indigo">
 
     <!-- Footer Links -->
     <div class="container">
@@ -98,8 +96,7 @@
 
             <!-- Grid column -->
             <div class="col-md-8 col-12 mt-5">
-                <p style="line-height: 1.7rem">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
-                    quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
+                <p style="line-height: 1.7rem">We know how hard it is to get a good truck and move large properties to your desired location. Are you worried and don't know a reliable truck-man to handle your properties with care? Don't worry, you dont have to miss that deadline anymore we have got you covered! We will just Mooveet! </p>
             </div>
             <!-- Grid column -->
 
@@ -116,27 +113,27 @@
                 <div class="mb-5 flex-center">
 
                     <!-- Facebook -->
-                    <a href="#" class="fb-ic">
+                    <a href="https://github.com/karosaxy" class="fb-ic">
                         <i class="fab fa-facebook-f text-white mr-4"></i>
                     </a>
                     <!-- Twitter -->
-                    <a href="#" class="tw-ic">
+                    <a href="https://twitter.com/AraromiRichard" class="tw-ic">
                         <i class="fab fa-twitter fa-lg text-white mr-4"> </i>
                     </a>
                     <!-- Google +-->
-                    <a href="#" class="gplus-ic">
+                    <a href="https://github.com/karosaxy" class="gplus-ic">
                         <i class="fab fa-google-plus-g fa-lg text-white mr-4"> </i>
                     </a>
                     <!--Linkedin -->
-                    <a href="#" class="li-ic">
+                    <a href="https://www.linkedin.com/in/richard-araromi-06685ab7/" class="li-ic">
                         <i class="fab fa-linkedin-in fa-lg text-white mr-4"> </i>
                     </a>
                     <!--Instagram-->
-                    <a href="#" class="ins-ic">
+                    <a href="https://github.com/karosaxy" class="ins-ic">
                         <i class="fab fa-instagram fa-lg text-white mr-4"> </i>
                     </a>
                     <!--Pinterest-->
-                    <a href="#" class="pin-ic">
+                    <a href="https://github.com/karosaxy" class="pin-ic">
                         <i class="fab fa-pinterest fa-lg text-white"> </i>
                     </a>
 
@@ -157,8 +154,8 @@
     </div>
     <!-- Copyright -->
 
-</footer>
-<!--End of Footer -->
+    </footer>
+    <!--End of Footer -->
 
     <!-- script -->
 

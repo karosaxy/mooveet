@@ -171,13 +171,3 @@ footer.page-footer {
         max-width: 100%;
     }
 }
-
-@media (max-width: 740px) {
-    html,
-    body,
-    header,
-    .view {
-        height: 40px !important;
-        text-align: center !important;
-    }
-}

@@ -27,7 +27,7 @@ body {
 }
 
 .bg-dark {
-    background: transparent !important;
+    background: #424f95 !important;
 }
 
 .bg-dark.scrolled {
@@ -36,10 +36,6 @@ body {
 
 .bg-blue {
     background: #424f95 !important;
-}
-
-.navbar.navbar-light form .md-form input {
-    border-bottom: 1px solid #b1acac !important;
 }
 
 .navbar.navbar-light .navbar-nav .nav-item .nav-link {
@@ -110,8 +106,22 @@ footer.page-footer {
     width: 100vw;
 }
 
+@media (max-width: 740px) {
+    html,
+    body,
+    header,
+    .view {
+        height: 100% !important;
+        text-align: center !important;
+    }
+}
 
-/*  Media queries */@charset "UTF-8";
+@media (min-width: 991.98px) {
+    .navbar-nav>.nav-item>.nav-link {
+        border-left: 1px;
+        border-color: #fff;
+    }
+}@charset "UTF-8";
 
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)

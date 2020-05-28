@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-xl navbar-light fixed-top bg-dark col-md-10">
+<nav class="navbar navbar-expand-xl navbar-light fixed-top bg-dark col-md-12" style="z-index: 2">
     <a class="navbar-brand text-white" href="{{ url('/') }}">
         <strong>{{ config('app.name', 'Mooveet') }}</strong></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -6,20 +6,20 @@
     </button>
     <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo02">
         <ul class="navbar-nav">
-            <li class="nav-item pr-3">
+            <li class="nav-item">
                 <a class="nav-link p-2" href="/about">About Us</a>
             </li>
-            <li class="nav-item border-left border-white pl-3 pr-3">
+            <li class="nav-item px-3">
                 <a class="nav-link p-2" href="/contact">Contact Us</a>
             </li>
-            <li class="nav-item pl-3 pr-3 border-left border-white ">
-                <a class="nav-link p-2" href="#">Services</a>
+            <li class="nav-item px-3">
+                <a class="nav-link p-2" href="/services">Services</a>
             </li>
-            <li class="nav-item pl-3 pr-3 border-left border-white ">
-                <a class="nav-link p-2" href="#">Driver Scan</a>
+            <li class="nav-item px-3">
+                <a class="nav-link p-2" href="{{ route('scan.create') }}">Driver Scan</a>
             </li>
-            <li class="nav-item pl-3 pr-3 border-left border-white ">
-                <a class="nav-link p-2" href="#">FAQ</a>
+            <li class="nav-item px-3">
+                <a class="nav-link p-2" href="/faq">FAQ</a>
             </li>
         </ul>
 

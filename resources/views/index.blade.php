@@ -9,11 +9,7 @@
         <div class="col-md-12 text-justify">
             <h2>Our Services</h2>
             <hr>
-            <p>Allow cargo owners to order for trucks anytime and easily track them once their cargo is in transit. And if you own a good truck please click the Registration Button and come join our wonderful family. Let's Mooveet!! Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Allow cargo owners to order for trucks anytime and easily track them once their cargo is in transit. And if you own a good truck please click the Registration Button and come join our wonderful family. Let's Mooveet!! This is my first project, it was built from scratch using Laravel framework, after a Month of Picking up Laravel, Kindly Use the contact addresses or the social media icons to send me your feedbacks and help me grow and get better, and if you have a Job opportunity for me especially a place where I can finetune my skills and get better please also reach out. The site might not be perfect but after picking up web development for the first time in January 2020, I can say it is only going to get better and better.</p>
         </div>
         <!--Grid column-->
     </div>
@@ -22,7 +18,7 @@
     <div class="mb-5 card-deck row">
 
         <!-- Card -->
-        <div class="card mb-4 col-md-4 col-sm-12 shadow">
+        <div class="card mb-4 col-md-7 col-sm-12 shadow">
 
             <!--Card image-->
             <img class="card-img-top" src="img/card1.jpg" alt="Card image cap">
