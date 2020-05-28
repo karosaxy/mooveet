@@ -30,7 +30,7 @@
                 <!--Text-->
                 <p class="card-text">We provide safe and Reliable warehouse Services. kindly reachout to us and make use of wide varieties warehouse services and ensure your cargo is safe.
                 </p>
-                <a href="" class="text-white btn btn-primary mt-auto">Read more</a>
+                <a href="/services" class="text-white btn btn-primary mt-auto">Read more</a>
 
             </div>
 
@@ -49,7 +49,7 @@
                 <!--Text-->
                 <p class="card-text">You dont have to loose sleep over your cargo, our Reliable Trucker understands how Important your cargo is, so feel free to make use of our tracker.
                 </p>
-                <a href="" class="text-white btn btn-primary mt-auto">Read more</a>
+                <a href="/tracking" class="text-white btn btn-primary mt-auto">Read more</a>
             </div>
 
         </div>
@@ -68,7 +68,7 @@
                 <!--Text-->
                 <p class="card-text">Getting a good and trusted Trucker to deliver your cargo is just a click away!.
                 </p>
-                <a href="" class="text-white btn btn-primary mt-auto">Read more</a>
+                <a href="{{ route('scan.create') }}" class="text-white btn btn-primary mt-auto">Read more</a>
             </div>
 
         </div>

@@ -121,7 +121,7 @@
                 <!-- Grid column -->
                 <div class="col-md-2 mb-3">
                     <h6 class="text-uppercase text-white font-weight-bold">
-                        <a href="/about">About us</a>
+                        <a href="/about" class="text-decoration-none text-reset">About us</a>
                     </h6>
                 </div>
                 <!-- Grid column -->
@@ -129,7 +129,7 @@
                 <!-- Grid column -->
                 <div class="col-md-2 mb-3">
                     <h6 class="text-uppercase text-white font-weight-bold">
-                        <a href="/services">Services</a>
+                        <a href="/services" class="text-decoration-none text-reset">Services</a>
                     </h6>
                 </div>
                 <!-- Grid column -->
@@ -137,7 +137,7 @@
                 <!-- Grid column -->
                 <div class="col-md-2 mb-3">
                     <h6 class="text-uppercase text-white font-weight-bold">
-                        <a href="/award">Awards</a>
+                        <a href="/awards" class="text-decoration-none text-reset">Awards</a>
                     </h6>
                 </div>
                 <!-- Grid column -->
@@ -145,7 +145,7 @@
                 <!-- Grid column -->
                 <div class="col-md-2 mb-3">
                     <h6 class="text-uppercase text-white font-weight-bold">
-                        <a href="/contact">Contact</a>
+                        <a href="/contact" class="text-decoration-none text-reset">Contact</a>
                     </h6>
                 </div>
                 <!-- Grid column -->
@@ -159,36 +159,34 @@
                 <!-- Grid column -->
                 <div class="col-sm-12 text-center">
     
-                    <div class="mb-2 flex-center">
-    
-                        <div class="mb-5 flex-center">
+                    <div class="mb-5 flex-center">
 
-                            <!-- Facebook -->
-                            <a href="https://github.com/karosaxy" class="fb-ic">
-                                <i class="fab fa-facebook-f text-white mr-4"></i>
-                            </a>
-                            <!-- Twitter -->
-                            <a href="https://twitter.com/AraromiRichard" class="tw-ic">
-                                <i class="fab fa-twitter fa-lg text-white mr-4"> </i>
-                            </a>
-                            <!-- Google +-->
-                            <a href="https://github.com/karosaxy" class="gplus-ic">
-                                <i class="fab fa-google-plus-g fa-lg text-white mr-4"> </i>
-                            </a>
-                            <!--Linkedin -->
-                            <a href="https://www.linkedin.com/in/richard-araromi-06685ab7/" class="li-ic">
-                                <i class="fab fa-linkedin-in fa-lg text-white mr-4"> </i>
-                            </a>
-                            <!--Instagram-->
-                            <a href="https://github.com/karosaxy" class="ins-ic">
-                                <i class="fab fa-instagram fa-lg text-white mr-4"> </i>
-                            </a>
-                            <!--Pinterest-->
-                            <a href="https://github.com/karosaxy" class="pin-ic">
-                                <i class="fab fa-pinterest fa-lg text-white"> </i>
-                            </a>
-        
-                        </div>
+                        <!-- Facebook -->
+                        <a href="https://github.com/karosaxy" class="fb-ic">
+                            <i class="fab fa-facebook-f text-white mr-4"></i>
+                        </a>
+                        <!-- Twitter -->
+                        <a href="https://twitter.com/AraromiRichard" class="tw-ic">
+                            <i class="fab fa-twitter fa-lg text-white mr-4"></i>
+                        </a>
+                        <!-- Google +-->
+                        <a href="https://github.com/karosaxy" class="gplus-ic">
+                            <i class="fab fa-google-plus-g fa-lg text-white mr-4"></i>
+                        </a>
+                        <!--Linkedin -->
+                        <a href="https://www.linkedin.com/in/richard-araromi-06685ab7/" class="li-ic">
+                            <i class="fab fa-linkedin-in fa-lg text-white mr-4"></i>
+                        </a>
+                        <!--Instagram-->
+                        <a href="https://github.com/karosaxy" class="ins-ic">
+                            <i class="fab fa-instagram fa-lg text-white mr-4"></i>
+                        </a>
+                        <!--Pinterest-->
+                        <a href="https://github.com/karosaxy" class="pin-ic">
+                            <i class="fab fa-pinterest fa-lg text-white"></i>
+                        </a>
+    
+                    </div>
     
                 </div>
                 <!-- Grid column -->
@@ -207,7 +205,7 @@
     
     </footer>
 
-    <script src="{{ asset('js/app.js') }}"></script>
+    {{-- <script src="{{ asset('js/app.js') }}"></script> --}}
 
 </body>
 

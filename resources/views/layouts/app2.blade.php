@@ -168,23 +168,23 @@
                         </a>
                         <!-- Twitter -->
                         <a href="https://twitter.com/AraromiRichard" class="tw-ic">
-                            <i class="fab fa-twitter fa-lg text-white mr-4"> </i>
+                            <i class="fab fa-twitter fa-lg text-white mr-4"></i>
                         </a>
                         <!-- Google +-->
                         <a href="https://github.com/karosaxy" class="gplus-ic">
-                            <i class="fab fa-google-plus-g fa-lg text-white mr-4"> </i>
+                            <i class="fab fa-google-plus-g fa-lg text-white mr-4"></i>
                         </a>
                         <!--Linkedin -->
                         <a href="https://www.linkedin.com/in/richard-araromi-06685ab7/" class="li-ic">
-                            <i class="fab fa-linkedin-in fa-lg text-white mr-4"> </i>
+                            <i class="fab fa-linkedin-in fa-lg text-white mr-4"></i>
                         </a>
                         <!--Instagram-->
                         <a href="https://github.com/karosaxy" class="ins-ic">
-                            <i class="fab fa-instagram fa-lg text-white mr-4"> </i>
+                            <i class="fab fa-instagram fa-lg text-white mr-4"></i>
                         </a>
                         <!--Pinterest-->
                         <a href="https://github.com/karosaxy" class="pin-ic">
-                            <i class="fab fa-pinterest fa-lg text-white"> </i>
+                            <i class="fab fa-pinterest fa-lg text-white"></i>
                         </a>
     
                     </div>

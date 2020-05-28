@@ -41,7 +41,7 @@ class OrderTruckController extends Controller
         //dd($trucks);
 
           if (count($trucks)===0){
-              session()->flash('message', 'There are no Trucks Available at your current Location, Try again Later');
+              session()->flash('message', 'Sorry we could not find any Truck matching your criteria.');
           }
         //   return view('scan.show')->$message;
 

@@ -10,7 +10,7 @@
         <hr>
     </div>
     @if (session()->has('message'))
-    <div class="alert alert-primary" role="alert">
+    <div class="alert alert-primary" role="alert" style="font-size: 2rem">
         {{--  --}}
         {{ session()->get('message') }}
     </div>

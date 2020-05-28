@@ -1,6 +1,9 @@
 <nav class="navbar navbar-expand-xl navbar-light fixed-top bg-dark col-md-12" style="z-index: 2">
-    <a class="navbar-brand text-white" href="{{ url('/') }}">
-        <strong>{{ config('app.name', 'Mooveet') }}</strong></a>
+    <h5>
+        <a class="navbar-brand text-white" href="{{ url('/') }}">
+            <strong>{{ config('app.name', 'Mooveet') }}</strong>
+        </a>
+    </h5>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
